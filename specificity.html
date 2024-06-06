@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Specificity</title>
+    <style>
+      p {
+        color: red;
+      }
+      #test {
+        color: blue !important;
+      }
+      .classtest {
+        color: green;
+      }
+      .test2 {
+        color: rgb(94, 108, 201);
+      }
+      .test3 {
+        color: rgb(205, 89, 178);
+      }
+    </style>
+  </head>
+  <body>
+    <p id="test" class="classtest" style="color: pink">
+      This is a red paragraph.
+    </p>
+    <div class="test2 test3">This is a red paragraph.</div>
+  </body>
+</html>
