@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pseudos</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        color: white;
+        transition: 0.5s;
+      }
+
+      div:hover {
+        background-color: lightcoral;
+        color: black;
+      }
+      input {
+        width: 200px;
+        height: 20px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        color: white;
+        transition: 0.5s;
+      }
+      input:focus {
+        background-color: lightcoral;
+        color: black;
+      }
+      input:active {
+        background-color: green;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- hover -->
+    <div>Hover over me</div>
+    <input type="text" />
+  </body>
+</html>
